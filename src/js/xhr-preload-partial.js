@@ -24,6 +24,7 @@ xhr.onload = function(oEvent) {
 
 xhr.onerror = function(oEvent) {
   message.innerHTML = 'failed to load'
+  console.log('xhr.onerror', oEvent)
 }
 
 xhr.send()

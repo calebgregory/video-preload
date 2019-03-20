@@ -27,4 +27,11 @@ xhr.onprogress = function(oEvent) {
   }
 }
 
+xhr.onerror = function(oEvent) {
+  console.log('xhr.onerror', oEvent)
+  const message = document.createElement('p')
+  message.innerHTML = 'Video failed to load'
+  root.appendChild(message)
+}
+
 xhr.send()
