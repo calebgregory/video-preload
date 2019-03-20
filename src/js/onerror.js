@@ -1,3 +1,4 @@
+// just create a video element and let chrome do the loading
 const root = document.getElementById('root')
 
 const video = document.createElement('video')
